@@ -10,6 +10,9 @@ create_env:
 render:
 	./R/rmdToHtml.R mtcars_mpg_rm
 
+render_short:
+	./R/rmdToHtml.R mtcars_mpg_rm_short
+
 # remove generated files
 clean:
 	rm -f $(SRC).csv

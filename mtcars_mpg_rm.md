@@ -17,7 +17,7 @@ In this analysis, relationship between various automobile characteristics and fu
 ## Data
 
 The data set is described at [Motor Trend Car Road Tests](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html) and consists of 
-data was extracted from the 1974 Motor Trend US magazine. 
+data extracted from the 1974 Motor Trend US magazine. 
 
 
 ```r
@@ -81,7 +81,7 @@ has a significant correlation with fuel efficiency.
   aWeight <- mean(mtcars[mtcars$am == "automatic", ]$wt*1000)
 ```
 
-The data indicates the same as, on average, manual transmission vehicles are
+Simply looking at the averages, manual transmission vehicles are
 **7mpg** more efficient than automatic
 transmission vehicles.
 
@@ -210,6 +210,6 @@ For every 1000lb increase in vehicle weight, we expect an estimated
 Factoring out the influence of weight, there isn't a statistically
 significant benefit of manual vs. automatic transmissions.
 In the sample data, the estimated benefit is just
-**0.01mpg**
+**0.13mpg**
 
 
