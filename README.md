@@ -1,2 +1,1 @@
-# coursera-rm-project
-coursera regression models data science final project
+mtcars_mpg_rm.md
