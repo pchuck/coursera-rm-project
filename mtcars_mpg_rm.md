@@ -7,6 +7,9 @@ output:
 ---
 
 # Automobile Characteristics vs. Fuel Efficiency 
+- Course: Regression Models (regmods)
+- Project: Course Project
+- Author: Patrick Charles
 
 ## Executive Summary
 

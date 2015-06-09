@@ -150,13 +150,21 @@ In the sample data, the estimated benefit is just
 
 # Appendix
 
-```{r multivariate, echo=FALSE}
+## Vehicle Attribute Pairs
+
+```{r multivariate, echo=TRUE, fig.width=9, fig.height=9}
   pairs(data=mtcars, mpg ~ wt + cyl + disp + am,
     panel=panel.smooth, main="Vehicle Characteristic Relationships",
     col=mtcars$am)
 ```
 
-```{r regression_wt_am, echo=FALSE}
+.
+
+.
+
+## Linear Regression Model
+
+```{r regression_wt_am, echo=TRUE, fig.width=9, fig.height=9}
   ggplot(mtcars) + aes(x=wt, y=mpg) +
     xlab("Weight (lb/1000)") + 
     ylab("Miles per (US) gallon") +
@@ -165,7 +173,13 @@ In the sample data, the estimated benefit is just
     ggtitle("Linear Regression - Vehicle Weight vs. Fuel Efficiency")
 ```
 
-```{r residuals, echo=FALSE}
+.
+
+.
+
+## Multivariate Regression Model, Residuals
+
+```{r residuals, echo=TRUE, fig.width=9, fig.height=9}
   mtcars$residual <- summary(lmodel)$residuals # add the residuals to the frame
 
   ggplot(mtcars) + aes(x=mpg, y=residual, color=am) +
